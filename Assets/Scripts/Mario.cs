@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Mario : MonoBehaviour
 {
+    
     private Rigidbody2D myBody;
     public float speed = 5;
     public float jumpHeight = 5;
@@ -22,4 +23,5 @@ public class Mario : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.UpArrow))
             myBody.velocity += Vector2.up*jumpHeight;
     }
+
 }
